@@ -5,6 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\jgonzalez\source\repos\WebComisol\WebComisol\bin\app.publish\</_PublishTargetUrl>
+    <History>True|2024-03-14T23:56:23.6925255Z;True|2024-03-13T11:42:16.7365749-06:00;True|2024-03-12T13:12:15.9340219-06:00;True|2024-03-12T13:12:00.1539050-06:00;True|2024-03-12T13:11:29.8890245-06:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Antlr3.Runtime.dll">
@@ -212,10 +213,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/28/2018 13:04:24</publishTime>
     </File>
     <File Include="bin/WebComisol.dll">
-      <publishTime>03/05/2024 12:17:40</publishTime>
+      <publishTime>03/14/2024 17:56:22</publishTime>
     </File>
     <File Include="bin/WebComisol.pdb">
-      <publishTime>03/05/2024 12:17:40</publishTime>
+      <publishTime>03/14/2024 17:56:22</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>01/23/2014 13:57:34</publishTime>
@@ -281,7 +282,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/26/2024 15:06:27</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>03/05/2024 12:16:30</publishTime>
+      <publishTime>03/14/2024 13:19:40</publishTime>
+    </File>
+    <File Include="Content/Style1.css">
+      <publishTime>03/14/2024 17:41:49</publishTime>
+    </File>
+    <File Include="Content/Style2.css">
+      <publishTime>03/14/2024 17:52:39</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>02/22/2024 16:32:24</publishTime>
@@ -304,6 +311,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Global.asax">
       <publishTime>02/22/2024 16:32:24</publishTime>
     </File>
+    <File Include="Scripts/circle.js">
+      <publishTime>03/14/2024 13:14:22</publishTime>
+    </File>
     <File Include="Scripts/jquery-3.4.1.js">
       <publishTime>02/22/2024 16:32:32</publishTime>
     </File>
@@ -314,37 +324,37 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/22/2024 16:32:24</publishTime>
     </File>
     <File Include="Views/Home/Cobertura.cshtml">
-      <publishTime>02/28/2024 12:25:29</publishTime>
+      <publishTime>03/14/2024 13:28:23</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
       <publishTime>02/22/2024 16:32:24</publishTime>
     </File>
     <File Include="Views/Home/Contactanos.cshtml">
-      <publishTime>02/29/2024 17:53:27</publishTime>
+      <publishTime>03/14/2024 13:30:49</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>02/23/2024 13:11:35</publishTime>
+      <publishTime>03/14/2024 11:59:59</publishTime>
     </File>
     <File Include="Views/Home/NuestraEmpresa.cshtml">
-      <publishTime>03/05/2024 11:46:28</publishTime>
+      <publishTime>03/14/2024 13:21:17</publishTime>
     </File>
     <File Include="Views/Home/Servicios.cshtml">
-      <publishTime>02/26/2024 17:12:24</publishTime>
+      <publishTime>03/14/2024 13:25:10</publishTime>
     </File>
     <File Include="Views/Home/Ventajas.cshtml">
-      <publishTime>02/28/2024 12:06:31</publishTime>
+      <publishTime>03/14/2024 17:50:29</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>02/22/2024 16:32:24</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>03/05/2024 12:17:16</publishTime>
+      <publishTime>03/14/2024 17:54:57</publishTime>
     </File>
     <File Include="Views/Shared/_Layout2.cshtml">
-      <publishTime>03/05/2024 12:17:27</publishTime>
+      <publishTime>03/14/2024 17:56:14</publishTime>
     </File>
     <File Include="Views/Shared/_Layout3.cshtml">
-      <publishTime>03/05/2024 12:17:34</publishTime>
+      <publishTime>03/14/2024 17:55:03</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>02/22/2024 16:32:24</publishTime>

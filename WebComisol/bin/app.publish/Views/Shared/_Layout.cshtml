@@ -4,7 +4,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Comisol- @ViewBag.Title</title>
+    <title> Comisol</title>
+    <link rel="shortcut icon" href="~/Content/img/home/logo comisol.png" />
+
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
           rel="stylesheet" />
@@ -14,16 +16,19 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
           rel="stylesheet" />
-    @Styles.Render("~/Content/css")
+    <link href="~/Content/Style2.css"
+          rel="stylesheet" />
+
+
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <section class="border  bg-image" id="intro" ">
+    <section class="border  bg-image" id="intro">
 
         <nav class="navbar navbar-expand-lg " style=" box-shadow: none !important;">
             <!-- Container wrapper -->
-            <div class="container-fluid">
-               
+            <div class="container-fluid pt-3">
+
                 <!-- Toggle button -->
                 <button data-mdb-collapse-init
                         class="navbar-toggler"
@@ -32,99 +37,103 @@
                         aria-controls="navbarCenteredExample"
                         aria-expanded="false"
                         aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars" style="color:#fff;"></i>
                 </button>
 
                 <!-- Collapsible wrapper -->
-                <div class="collapse navbar-collapse justify-content-center"
+                <div class="collapse navbar-collapse justify-content-center "
                      id="navbarCenteredExample">
                     <!-- Left links -->
                     <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item pt-2 px-2 @(ViewContext.RouteData.Values["Action"].ToString() == "NuestraEmpresa" ? "active" : "")">
+
+                        <li class="nav-item pt-4 px-2 @(ViewContext.RouteData.Values["Action"].ToString() == "NuestraEmpresa" ? "active" : "")">
                             @Html.ActionLink("NUESTRA EMPRESA", "NuestraEmpresa", null, new { @class = "my-class" })
                         </li>
-                        <li class="nav-item pt-2 px-2 @(ViewContext.RouteData.Values["Action"].ToString() == "Servicios" ? "active" : "")">
+                        <li class="nav-item pt-4 px-2 @(ViewContext.RouteData.Values["Action"].ToString() == "Servicios" ? "active" : "")">
                             @Html.ActionLink("SERVICIOS", "Servicios", null, new { @class = "my-class" })
                         </li>
-                        <li class="nav-item pt-2 px-2 @(ViewContext.RouteData.Values["Action"].ToString() == "Ventajas" ? "active" : "")">
+                        <li class="nav-item pt-4 px-2 @(ViewContext.RouteData.Values["Action"].ToString() == "Ventajas" ? "active" : "")">
                             @Html.ActionLink("VENTAJAS", "Ventajas", null, new { @class = "my-class" })
                         </li>
-                        <li class="nav-item pt-2 px-2 @(ViewContext.RouteData.Values["Action"].ToString() == "Cobertura" ? "active" : "")">
+                        <li class="nav-item pt-4 px-2 @(ViewContext.RouteData.Values["Action"].ToString() == "Cobertura" ? "active" : "")">
                             @Html.ActionLink("COBERTURA", "Cobertura", null, new { @class = "my-class" })
                         </li>
-                        <li class="nav-item pt-2 px-2 @(ViewContext.RouteData.Values["Action"].ToString() == "Contactanos" ? "active" : "")">
+                        <li id="liContactanos" class="nav-item pt-4 px-2 @(ViewContext.RouteData.Values["Action"].ToString() == "Contactanos" ? "active" : "")">
                             @Html.ActionLink("CONTÁCTANOS", "Contactanos", null, new { @class = "my-class" })
                         </li>
-
+                        <li class="nav-item pt-3 px-2">
+                            <div class="col-md-1"><span class="" id="circle"></span></div>
+                        </li>
                     </ul>
                     <!-- Left links -->
                 </div>
                 <!-- Collapsible wrapper -->
             </div>
             <!-- Container wrapper -->
+
         </nav>
         <div class="">
             @RenderBody()
-                <footer class="bg-white text-white  text-lg-start">
-                    <!-- Grid container -->
-                    <div class="container p-4">
-                        <!--Grid row-->
-                        <div class="row pt-3">
-                            <!--Grid column-->
-                            <div class="col-lg-5 col-md-12 mb-4 mb-md-0 ">
-                                <img class="w-50 " src="/Content/img/home/logo comisol.png" />
+            <footer class="text-white  text-lg-start" style="background-color:#f4f0e4 !important;">
+                <!-- Grid container -->
+                <div class="container p-4">
+                    <!--Grid row-->
+                    <div class="row pt-3">
+                        <!--Grid column-->
+                        <div class="col-lg-5 col-md-12 mb-4 mb-md-0 ">
+                            <img class="w-50 " src="/Content/img/home/logo comisol.png" />
 
-                               <div class="col-md-9 " id="intro" style="border-radius:5px;">
-                                   <p class=" m-5 pt-2 pb-2">
-                                       Av. Insurgentes Sur No. 1524, interior
-                                       905, Col. Crédito Constructor, Alcaldía
-                                       Benito Juárez 03940, CDMX
-                                   </p>
-                               </div>
+                            <div class="col-md-9 " id="introo" style="border-radius:5px;">
+                                <p class=" m-5 pt-2 pb-2">
+                                    Av. Insurgentes Sur No. 1524, interior
+                                    905, Col. Crédito Constructor, Alcaldía
+                                    Benito Juárez 03940, CDMX
+                                </p>
                             </div>
-                            <!--Grid column-->
-                            <!--Grid column-->
-                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                                <div class="col-md-7 mb-7">
-                                </div>
-                                <div class="col-md-9 " id="intro" style="border-radius:5px;">
-                                    <p class="text-center m-1 pt-2 pb-2">
-                                        55 5086 9173
-                                    </p>
-                                </div>
-                                <div class="col-md-7 mb-5">
-                                </div>
-                                <div class="col-md-9 " id="intro" style="border-radius:5px;">
-                                    <p class="text-center m-1 pt-2 pb-2">
-                                        contacto@comisol.com
-                                    </p>
-                                </div>
-                            </div>
-                            <!--Grid column-->
-                            <!--Grid column-->
-                            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                                <div class="row pt-5">
-                                    <p class="text-center tv">Diseño y Programación</p>
-                                    <div class="col-lg-6 col-md-6 col-sm-4">
-                                        <img class="w-100 pt-4" src="~/Content/img/home/logo nblanco.png" />
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                        <img class="w-100" src="~/Content/img/home/logo raciti.png" />
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Grid column-->
                         </div>
-                        <!--Grid row-->
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <div class="col-md-7 mb-7">
+                            </div>
+                            <div class="col-md-11 " id="introo" style="border-radius:5px;">
+                                <p class="text-center m-1 pt-2 pb-2">
+                                    55 5086 9173
+                                </p>
+                            </div>
+                            <div class="col-md-7 mb-5">
+                            </div>
+                            <div class="col-md-11 " id="introo" style="border-radius:5px;">
+                                <p class="text-center m-1 pt-2 pb-2">
+                                    contacto@comisol.com
+                                </p>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <div class="row pt-5">
+                                <p class="text-center tv">Diseño y Programación</p>
+                                <div class="col-lg-6 col-md-6 col-sm-4 m-3 text-center">
+                                    <img width="180" src="~/Content/img/home/logo nblanco.png" />
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-2 m-2 text-center">
+                                    <img width="80" src="~/Content/img/home/logo raciti.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid column-->
                     </div>
-                    
-                </footer>  
+                    <!--Grid row-->
+                </div>
+
+            </footer>
         </div>
         <!-- MDB -->
         <script type="text/javascript"
                 src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
-        <script type="text/javascript"
-                src="~/Scripts/jquery-3.4.1.js"></script>
-        @RenderSection("scripts", required: false)
+        <script type="text/javascript" src="~/Scripts/jquery-3.4.1.js"></script>
+        <script src="/Scripts/circle.js" type="text/javascript" defer></script>
+
 </body>
 </html>

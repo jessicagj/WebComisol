@@ -13,12 +13,28 @@
 }
 body {
     font-family: 'Poppins-Regular';
+    background-color:#f4f0e4 !important;
+}
+footer {
+    background-color: #f4f0e4;
+}
+p{
+    font-size:15px;
+}
+.fz {
+    font-size: 25px;
+}
+.fz1 {
+    font-size: 19px;
 }
 #intro {
     background-color:#7880b1 !important;
 }
+#introo {
+    background-color: #7880b18f;
+}
 #intro2 {
-    background-color: #FFF !important;
+    background-color: #f4f0e4 !important;
 }
 .tv{
     color:#7880b1
@@ -35,27 +51,30 @@ body {
 
 a.my-class {
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     color: #fff !important;
-    font-weight: bold;
     font-family: 'Poppins-Regular';
     justify-content: center;
 }
 
     a.my-class:hover {
-        color: gray !important;
-        text-decoration: underline
+        color: #FFDA7D !important;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 3px;
     }
 
     a.my-class:active {
         color: #fff;
-        text-decoration: underline
+        text-decoration: underline;
+        font-weight:bold;
     }
 
 
 .nav-item.active a.my-class {
     color: #FFF;
-    text-decoration: underline
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .nav-item {
@@ -67,26 +86,31 @@ a.my-class2 {
     text-decoration: none;
     font-size: 17px;
     color: #7880b1 !important;
-    font-weight: bold;
     font-family: 'Poppins-Regular';
     justify-content: center;
 }
 
     a.my-class2:hover {
-        color: gray !important;
+        color: #363A51 !important;
         text-decoration: underline
     }
 
     a.my-class2:active {
         color: rgba(225, 225, 225, 0.19) !important;
         font-size: 20px;
-        text-decoration: underline
+        text-decoration: underline;
+        font-weight: bold;
+        text-underline-offset: 10px;
     }
 
 
 .nav-item.active a.my-class2 {
-    color: gray;
-    text-decoration: underline
+    color: #7880b1;
+    color: #FFF;
+    text-decoration: underline;
+    font-weight: bold;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 3px;
 }
 
 .nav-item {
@@ -105,7 +129,7 @@ h6 {
 h2 {
     font-family: 'Poppins-Bold';
 }
- 
+
 .form-outline .form-control {
     min-height: auto;
     padding-top: .32rem;
@@ -113,7 +137,7 @@ h2 {
     padding-left: .75rem;
     padding-right: .75rem;
     border: 0;
-    background: rgba(225, 225, 225, 0.19);
+    background: rgba(255, 255, 255, 0.05);
     transition: all .2s linear;
 }
 
@@ -134,6 +158,9 @@ h2 {
     }
 .btn {
      box-shadow: none !important;
+}
+#vresponsive{
+    display:none;
 }
 
 .pulse {
@@ -182,6 +209,58 @@ h2 {
         box-shadow: 0 0 0 0 rgba(204,169,44, 0);
     }
 }
+
+/*.pulse2 {
+    margin: 5px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #7880b100;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+    animation: pulse 2s infinite;
+}
+
+    .pulse2:hover {
+        animation: none;
+    }
+@-webkit-keyframes pulse2 {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 #7880b100;
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 10px #7880b100;
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 #7880b100;
+    }
+}
+
+@keyframes pulse2 {
+    0% {
+        -moz-box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+        box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0.4);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+}*/
+
+.ner {
+    display: none;
+}
+/*Responsive*/
+
 @media (min-width: 768px) and (max-width: 1200px) {
     .pulse {
         margin-left: 90px !important;
@@ -195,6 +274,37 @@ h2 {
         box-shadow: 0 0 0 rgba(204,169,44, 0.4);
         animation: pulse 2s infinite;
     }
+
+    .fz1 {
+        font-size: 15px;
+    }
+ 
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .ner{
+      display:inline-block;
+  }
+  .ne{
+      display:none;
+  }
+}
+@media (min-width: 300px) and (max-width: 767px) {
+    
+    #vresponsive {
+        display: inline;
+    }
+    #vweb{
+        display:none !important;
+    }
+}
+.point{
+    content: "\2022"; /* Adds the bullet */
+    padding-right: 10px; /* creates the space between bullet, list item */
+    color: #7880b1; /* changes the bullet color*/
+
 }
 
 
+  .point::marker {
+        font-size: 40px;
+    }
