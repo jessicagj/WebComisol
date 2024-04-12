@@ -88,8 +88,8 @@ a.my-class {
 }
 
 .nav-item {
-    text-align: end;
-    width: 220px;
+    text-align: end !important;
+    width: 190px;
 }
 
 a.my-class2 {

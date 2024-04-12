@@ -19,6 +19,8 @@
 body {
     font-family: 'Poppins-Regular';
     background-color: #f4f0e4;
+    color:#000
+
 }
 
 footer {
@@ -61,15 +63,15 @@ p {
 .nav-link {
     color: #fff;
     font-family: 'Poppins-Regular';
-    justify-content: center;
+    justify-content: end;
 }
 
 a.my-class {
     text-decoration: none;
     font-size: 17px;
-    color: #fff !important;
+    color: #f4f0e4 !important;
     font-family: 'Poppins-Regular';
-    justify-content: center;
+    justify-content: end;
 }
 
     a.my-class:hover {
@@ -78,14 +80,14 @@ a.my-class {
     }
 
     a.my-class:active {
-        color: #fff;
+        color: #f4f0e4;
         text-decoration: underline;
         font-weight: bold;
     }
 
 
 .nav-item.active a.my-class {
-    color: #FFF;
+    color: #f4f0e4;
     text-decoration: underline;
     font-weight: bold;
     text-underline-offset: 5px;
@@ -93,8 +95,8 @@ a.my-class {
 }
 
 .nav-item {
-    text-align: end;
-    width: 220px;
+    text-align: end !important;
+    width: 190px;
 }
 
 a.my-class2 {
@@ -233,7 +235,7 @@ h2 {
 
 @media (min-width: 768px) and (max-width: 1200px) {
     .pulse {
-        margin-left: 90px !important;
+        margin-left: 190px !important;
         margin: 5px;
         display: block;
         width: 22px;
@@ -251,21 +253,33 @@ h2 {
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
-
-    #vresponsive {
-        display: inline;
+    .pulse {
+        display:none !important;
     }
-    
-
+ 
     #vresponsive {
-        display: inline-block !important;
+        display: inline !important;
     }
     #veresponsive {
         display: none !important;
     }
+    .p5{
+        padding-top: 0px !important
+    }
+    .imgCenter {
+        text-align: center;
+    }
+    .tc{
+        text-align:center !important
+    }
+    .imgR{
+        width:85% !important;
+    }
 }
 @media (min-width: 769px) and (max-width: 1200px) {
-    
+    .imgCenter {
+        text-align: center;
+    }
  
     #veresponsive {
         display: none !important;
@@ -287,4 +301,10 @@ h2 {
     border: var(--mdb-border-width) solid var(--mdb-navbar-toggler-border-color);
     border-radius: var(--mdb-navbar-toggler-border-radius);
     transition: var(--mdb-navbar-toggler-transition);
+}
+.p5 {
+    padding-top: 50px ;
+}
+.tc {
+    text-align: start
 }

@@ -23,6 +23,7 @@ p{
 }
 .fz {
     font-size: 25px;
+    color:#000 ;
 }
 .fz1 {
     font-size: 19px;
@@ -77,10 +78,7 @@ a.my-class {
     font-weight: bold;
 }
 
-.nav-item {
-    text-align: end;
-    width: 220px;
-}
+
 
 a.my-class2 {
     text-decoration: none;
@@ -115,7 +113,7 @@ a.my-class2 {
 
 .nav-item {
     text-align: end;
-    width: 220px;
+    width: 200px;
 }
 footer {
     font-family: 'Poppins-Light';
@@ -130,15 +128,19 @@ h2 {
     font-family: 'Poppins-Bold';
 }
 
-.form-outline .form-control {
+.form-control {
     min-height: auto;
     padding-top: .32rem;
     padding-bottom: .32rem;
     padding-left: .75rem;
     padding-right: .75rem;
-    border: 0;
-    background: rgba(255, 255, 255, 0.05);
+    border: 0 !important;
+    background: rgb(120, 128, 177, .10) !important;
     transition: all .2s linear;
+    color: #000 !important
+}
+::placeholder{
+    color:#000 !important
 }
 
     .form-outline .form-control ~ .form-label {
@@ -260,51 +262,83 @@ h2 {
     display: none;
 }
 /*Responsive*/
-
-@media (min-width: 768px) and (max-width: 1200px) {
-    .pulse {
-        margin-left: 90px !important;
-        margin: 5px;
-        display: block;
-        width: 22px;
-        height: 22px;
-        border-radius: 50%;
-        background: #7880b1;
-        cursor: pointer;
-        box-shadow: 0 0 0 rgba(204,169,44, 0.4);
-        animation: pulse 2s infinite;
-    }
-
-    .fz1 {
-        font-size: 15px;
-    }
- 
-}
-@media (min-width: 769px) and (max-width: 1200px) {
-  .ner{
-      display:inline-block;
-  }
-  .ne{
-      display:none;
-  }
-}
 @media (min-width: 300px) and (max-width: 767px) {
-    
-    #vresponsive {
-        display: inline;
-    }
-    #vweb{
-        display:none !important;
+    .pulse {
+        display: none !important;
     }
 }
-.point{
-    content: "\2022"; /* Adds the bullet */
-    padding-right: 10px; /* creates the space between bullet, list item */
-    color: #7880b1; /* changes the bullet color*/
 
-}
+    @media (min-width: 768px) and (max-width: 1200px) {
+        .pulse {
+            margin-left: 90px !important;
+            margin: 5px;
+            display: block;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #7880b1;
+            cursor: pointer;
+            box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+            animation: pulse 2s infinite;
+        }
 
+        .fz1 {
+            font-size: 15px;
+        }
+    }
 
-  .point::marker {
+    @media (min-width: 769px) and (max-width: 1200px) {
+        .ner {
+            display: inline-block;
+        }
+
+        .ne {
+            display: none;
+        }
+    }
+
+    @media (min-width: 300px) and (max-width: 767px) {
+
+        #vresponsive {
+            display: inline;
+        }
+
+        #vweb {
+            display: none !important;
+        }
+
+        .ner {
+            display: inline-block;
+            justify-content: center !important;
+        }
+
+        .ne {
+            display: none;
+        }
+
+        .p5 {
+            padding-top: 0px !important;
+        }
+
+        .imgCenter {
+            text-align: center;
+        }
+
+        .pulse {
+            display: none !important;
+        }
+    }
+
+    .point {
+        content: "\2022"; /* Adds the bullet */
+        padding-right: 1px; /* creates the space between bullet, list item */
+        color: #7880b1; /* changes the bullet color*/
+    }
+
+    .p5 {
+        padding-top: 50px;
+    }
+
+    .point::marker {
         font-size: 40px;
     }

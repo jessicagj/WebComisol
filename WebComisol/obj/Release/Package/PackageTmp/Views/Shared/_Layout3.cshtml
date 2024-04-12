@@ -31,11 +31,13 @@
 
         <nav class="navbar navbar-expand-lg " style=" box-shadow: none !important;">
             <!-- Container wrapper -->
-            <div class="container-fluid">
-
+            <div class="container-fluid ">
+                <a class="navbar-brand" href='@Url.Action("Index", "Home")'>
+                    <img width="180" src="/Content/img/home/Comisol en blanco.png" />
+                </a>
                 <!-- Toggle button -->
                 <button data-mdb-collapse-init
-                        class="navbar-toggler"
+                        class="navbar-toggler justify-content-end"
                         type="button"
                         data-mdb-target="#navbarCenteredExample"
                         aria-controls="navbarCenteredExample"
@@ -48,11 +50,9 @@
                 <div class="collapse navbar-collapse justify-content-center "
                      id="navbarCenteredExample">
                     <!-- Left links -->
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                    <ul class="navbar-nav mb-2 mb-lg-0" style="align-items:end;">
                         <li class="nav-item pt-2 px-2">
-                            <a class="navbar-brand" href='@Url.Action("Index", "Home")'>
-                                <img width="180" src="/Content/img/home/Comisol en blanco.png" />
-                            </a>
+
                         </li>
                         <li class="nav-item pt-4 px-2 @(ViewContext.RouteData.Values["Action"].ToString() == "NuestraEmpresa" ? "active" : "")">
                             @Html.ActionLink("NUESTRA EMPRESA", "NuestraEmpresa", null, new { @class = "my-class" })
@@ -83,11 +83,11 @@
             @RenderBody()
             <footer class="text-white  text-lg-start" style="background-color:#f4f0e4 !important;">
                 <!-- Grid container -->
-                <div class="container p-4">
+                <div class="container ">
                     <!--Grid row-->
-                    <div class="row pt-3">
+                    <div class="row pt-5">
                         <!--Grid column-->
-                        <div class="col-lg-5 col-md-12 mb-4 mb-md-0 ">
+                        <div class="col-lg-5 col-md-12  mb-md-0 imgCenter">
                             <img class="w-50 " src="/Content/img/home/logo comisol.png" />
 
                             <div class="col-md-9 " id="intro" style="border-radius:5px;">
@@ -100,10 +100,8 @@
                         </div>
                         <!--Grid column-->
                         <!--Grid column-->
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <div class="col-md-7 mb-7">
-                            </div>
-                            <div class="col-md-11 " id="intro" style="border-radius:5px;">
+                        <div class="col-lg-3 col-md-6 mb-md-0 p5">
+                            <div class="col-md-11" id="intro" style="border-radius:5px;">
                                 <p class="text-center m-1 pt-2 pb-2">
                                     55 5086 9173
                                 </p>
@@ -122,10 +120,10 @@
                             <div class="row pt-5">
                                 <p class="text-center tv">Diseño y Programación</p>
                                 <div class="col-lg-6 col-md-6 col-sm-4 m-3 text-center">
-                                    <img class="w-100 pt-4" src="~/Content/img/home/logo nblanco.png" />
+                                    <img width="170" class=" pt-4" src="~/Content/img/home/logo nblanco.png" />
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <img class="w-100" src="~/Content/img/home/logo raciti.png" />
+                                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                                    <img width="70" class=" pt-4" src="~/Content/img/home/logo raciti.png" />
                                 </div>
                             </div>
                         </div>

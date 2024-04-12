@@ -27,8 +27,9 @@
 
         <nav class="navbar navbar-expand-lg " style=" box-shadow: none !important;">
             <!-- Container wrapper -->
-            <div class="container-fluid pt-3">
-
+            <div class="container-fluid  justify-content-end">
+                <a class="navbar-brand" href=''>
+                </a>
                 <!-- Toggle button -->
                 <button data-mdb-collapse-init
                         class="navbar-toggler"
@@ -41,11 +42,13 @@
                 </button>
 
                 <!-- Collapsible wrapper -->
-                <div class="collapse navbar-collapse justify-content-center "
-                     id="navbarCenteredExample">
+                <div class="collapse navbar-collapse justify-content-center"
+                     id="navbarCenteredExample"
                     <!-- Left links -->
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                    <ul class="navbar-nav mb-2 mb-lg-0" style="align-items:end;">
+                        <li class="nav-item pt-2 px-2">
 
+                        </li>
                         <li class="nav-item pt-4 px-2 @(ViewContext.RouteData.Values["Action"].ToString() == "NuestraEmpresa" ? "active" : "")">
                             @Html.ActionLink("NUESTRA EMPRESA", "NuestraEmpresa", null, new { @class = "my-class" })
                         </li>
@@ -61,8 +64,8 @@
                         <li id="liContactanos" class="nav-item pt-4 px-2 @(ViewContext.RouteData.Values["Action"].ToString() == "Contactanos" ? "active" : "")">
                             @Html.ActionLink("CONTÁCTANOS", "Contactanos", null, new { @class = "my-class" })
                         </li>
-                        <li class="nav-item pt-3 px-2">
-                            <div class="col-md-1"><span class="" id="circle"></span></div>
+                        <li class="nav-item pt-3 px-2 justify-content-end">
+                            <span class="" id="circle"></span>
                         </li>
                     </ul>
                     <!-- Left links -->
@@ -76,11 +79,11 @@
             @RenderBody()
             <footer class="text-white  text-lg-start" style="background-color:#f4f0e4 !important;">
                 <!-- Grid container -->
-                <div class="container p-4">
+                <div class="container ">
                     <!--Grid row-->
                     <div class="row pt-3">
                         <!--Grid column-->
-                        <div class="col-lg-5 col-md-12 mb-4 mb-md-0 ">
+                        <div class="col-lg-5 col-md-12 mb-md-0 imgCenter">
                             <img class="w-50 " src="/Content/img/home/logo comisol.png" />
 
                             <div class="col-md-9 " id="introo" style="border-radius:5px;">
@@ -93,8 +96,8 @@
                         </div>
                         <!--Grid column-->
                         <!--Grid column-->
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <div class="col-md-7 mb-7">
+                        <div class="col-lg-3 col-md-6  mb-md-0">
+                            <div class="col-md-7 p5">
                             </div>
                             <div class="col-md-11 " id="introo" style="border-radius:5px;">
                                 <p class="text-center m-1 pt-2 pb-2">
@@ -115,10 +118,10 @@
                             <div class="row pt-5">
                                 <p class="text-center tv">Diseño y Programación</p>
                                 <div class="col-lg-6 col-md-6 col-sm-4 m-3 text-center">
-                                    <img width="180" src="~/Content/img/home/logo nblanco.png" />
+                                    <img width="170" src="~/Content/img/home/logo nblanco.png" />
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-2 m-2 text-center">
-                                    <img width="80" src="~/Content/img/home/logo raciti.png" />
+                                    <img width="70" src="~/Content/img/home/logo raciti.png" />
                                 </div>
                             </div>
                         </div>

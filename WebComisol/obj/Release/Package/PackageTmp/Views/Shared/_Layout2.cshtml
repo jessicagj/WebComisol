@@ -31,11 +31,14 @@
 
         <nav class="navbar navbar-expand-lg " style=" box-shadow: none !important;">
             <!-- Container wrapper -->
-            <div class="container-fluid">
+            <div class="container-fluid ">
                 <!-- Navbar brand -->
+                <a class="navbar-brand text-center" href='@Url.Action("Index", "Home")'>
+                    <img width="180" src="~/Content/img/home/logo comisol.png" />
+                </a>
                 <!-- Toggle button -->
                 <button data-mdb-collapse-init
-                        class="navbar-toggler"
+                        class="navbar-toggler justify-content-end"
                         type="button"
                         data-mdb-target="#navbarCenteredExample"
                         aria-controls="navbarCenteredExample"
@@ -45,14 +48,12 @@
                 </button>
 
                 <!-- Collapsible wrapper -->
-                <div class="collapse navbar-collapse justify-content-center"
+                <div class="collapse navbar-collapse justify-content-start"
                      id="navbarCenteredExample">
                     <!-- Left links -->
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                    <ul class="navbar-nav mb-2 mb-lg-0" style="align-items:end;">
                         <li class="nav-item pt-2 px-2">
-                            <a class="navbar-brand" href='@Url.Action("Index", "Home")'>
-                                <img width="180" src="~/Content/img/home/logo comisol.png" />
-                            </a>
+
                         </li>
                         <li class="nav-item pt-4 px-2 @(ViewContext.RouteData.Values["Action"].ToString() == "NuestraEmpresa" ? "active" : "")">
                             @Html.ActionLink("NUESTRA EMPRESA", "NuestraEmpresa", null, new { @class = "my-class2" })
@@ -84,11 +85,11 @@
             @RenderBody()
             <footer class="text-white  text-lg-start" id="intro">
                 <!-- Grid container -->
-                <div class="container p-4">
+                <div class="container ">
                     <!--Grid row-->
-                    <div class="row pt-3">
+                    <div class="row pt-5">
                         <!--Grid column-->
-                        <div class="col-lg-5 col-md-12 mb-4 mb-md-0 ">
+                        <div class="col-lg-5 col-md-12  mb-md-0 imgCenter">
                             <img class="w-50 " src="~/Content/img/home/Comisol en blanco.png" />
 
                             <div class="col-md-9 " id="vo" style="border-radius:5px;">
@@ -101,8 +102,8 @@
                         </div>
                         <!--Grid column-->
                         <!--Grid column-->
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <div class="col-md-7 mb-7">
+                        <div class="col-lg-3 col-md-6 mb-md-0">
+                            <div class="col-md-7 p5">
                             </div>
                             <div class="col-md-11 " id="vo" style="border-radius:5px;">
                                 <p class="text-center m-1 pt-2 pb-2">
@@ -123,10 +124,10 @@
                             <div class="row pt-5">
                                 <p class="text-center text-white">Diseño y Programación</p>
                                 <div class="col-lg-6 col-md-6 col-sm-4 m-3 text-center">
-                                    <img width="180" src="~/Content/img/mision/logo nblanco beige.png" />
+                                    <img width="170" src="~/Content/img/mision/logo nblanco beige.png" />
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-2 m-2 text-center">
-                                    <img width="75" src="~/Content/img/mision/logo raciti beige.png" />
+                                    <img width="70" src="~/Content/img/mision/logo raciti beige.png" />
                                 </div>
                             </div>
                         </div>
